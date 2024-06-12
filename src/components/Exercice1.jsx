@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Image, Text, View, StyleSheet, Button, ScrollView, SafeAreaView, FlatList, TextInput, Alert } from "react-native";
 import TextModal from "./TextModal";
 import Home from "./Home";
-import TodoList from "./TodoList";
+import Task from "./todoList/Task";
 
 const Exercice1 = () => {
 
@@ -53,16 +53,15 @@ const Exercice1 = () => {
         setVisible(false)
     }
 
-    return (
+    return ( 
         <View style={styles.container}>
-            <Image style={styles.logo} source={{ uri: 'https://cdn-icons-png.flaticon.com/512/79/79785.png' }} />
+            <Image style={styles.logo} source={{ uri: 'https://cdn.iconscout.com/icon/free/png-256/free-logo-1889531-1597591.png?f=webp' }} />
             <View>
-            <Text style={styles.title}>Ma liste de courses</Text>
-                {/* <Text style={styles.title}>Contact</Text>
+                <Text style={styles.title}>Contact</Text>
                 <Text style={styles.text}>Nom : <Text style={styles.contact}>{contact.nom}</Text></Text>
                 <Text style={styles.text}>Prénom : <Text style={styles.contact}>{contact.prenom}</Text></Text>
                 <Text style={styles.text}>Téléphone : <Text style={styles.contact}>{contact.telephone}</Text></Text>
-                <Text style={styles.text}>Adresse : <Text style={styles.contact}>{contact.adresse}</Text></Text> */}
+                <Text style={styles.text}>Adresse : <Text style={styles.contact}>{contact.adresse}</Text></Text>
 
                 {/* INPUT */}
                 <TextInput
@@ -74,13 +73,8 @@ const Exercice1 = () => {
 
                 {/* BOUTON */}
                 
-                <Button title="Ajouter" onPress={handleSubmit} />
-                <TodoList visible={visible} closeModal={closeModal}>
-
-                </TodoList>
-
-
-
+                {/* <Button title="Ajouter" onPress={handleSubmit} /> */}
+            
                 {/* TABLEAU */}
                 <FlatList
                     data={tab}
@@ -118,6 +112,7 @@ const styles = StyleSheet.create({
     logo: {
         width: 100,
         height: 100,
+
     },
     title: {
         textAlign: 'center',

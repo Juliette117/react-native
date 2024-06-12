@@ -1,6 +1,6 @@
 import { Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import Home from "./components/Home";
-import Exercice1 from "./components/Exercices";
+import Exercice1 from "./components/Exercice1";
 
 const App = () => {
     return ( 

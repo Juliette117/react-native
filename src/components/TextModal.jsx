@@ -7,7 +7,7 @@ const TextModal = (props) => {
             {props.children}
             <View>
                 <Button 
-                    style={s}
+                   
                     title="close Modal"
                     onPress={props.closeModal}
                 />

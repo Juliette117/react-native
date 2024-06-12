@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Image, Text, View, StyleSheet, ScrollView, SafeAreaView, FlatList, Button, } from "react-native";
-import Article from "./components/Article";
-import FormModal from "./components/FormModal";
+import Article from "./Article";
+import FormModal from "./FormModal";
 
 
-const App = () => {
+const ListeCourse = () => {
 
     const [modalIsVisible, setModalIsVisible] = useState(false)
     const [articles, setArticles] = useState([])
@@ -99,4 +99,4 @@ const styles = StyleSheet.create({
     
 });
 
-export default App;
+export default ListeCourse;

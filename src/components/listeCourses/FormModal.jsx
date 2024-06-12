@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Image, Modal, StyleSheet, TextInput, View } from "react-native";
+import { Image, Modal, StyleSheet, TextInput, View } from "react-native";
 
 const FormModal = (props) => {
 
@@ -12,7 +12,7 @@ const FormModal = (props) => {
     return ( 
         <Modal visible={props.visible}>
             <View style={styles.container}>
-                <Image style={styles.image} source={require('../assets/caddie.png')}></Image>
+                <Image style={styles.image} source={require('../../assets/caddie.png')}></Image>
                 <TextInput style={styles.input} placeholder="Ajoutez votre article" onChangeText={changeText} value={textArticle} />
             </View>
             <View>
@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
     input:{
         borderWidth: 1,
         borderColor: '#ccc',
-        width: 70,
         borderRadius: 7
     },
 
